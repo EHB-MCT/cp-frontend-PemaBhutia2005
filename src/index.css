@@ -1,0 +1,74 @@
+.bungee-regular {
+	font-family: "Bungee", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #000;
+}
+
+.logo {
+	width: 119px;
+	height: 137px;
+	margin-top: 15px;
+}
+
+.active {
+	text-decoration: underline red;
+}
+
+.search-bar {
+	width: 97%;
+	height: 40px;
+	background-color: #fff;
+	border: #000 solid 3px;
+	border-radius: 50px;
+	margin-left: 3%;
+	margin-top: 1.5%;
+}
+
+.search-bar::placeholder {
+	color: #000;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	padding-left: 1%;
+}
+
+.search-button {
+	height: 47px;
+	width: 15%;
+	background-color: #e51131;
+	border: #000 solid 3px;
+	border-radius: 50px;
+	border-bottom-left-radius: 0%;
+	border-top-left-radius: 0%;
+	position: relative;
+	top: -47px;
+	left: 86%;
+	color: #fff;
+	font-family: "Helvetica Neue", sans-serif;
+	font-size: 16px;
+}
+
+.flex {
+	display: flex;
+}
+
+.list-style-none {
+	list-style: none;
+}
+
+.inline-block {
+	display: inline-block;
+	margin-top: 2.5%;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+hr {
+	border: 5px solid #000;
+}
