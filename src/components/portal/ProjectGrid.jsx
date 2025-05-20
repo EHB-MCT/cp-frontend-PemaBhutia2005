@@ -36,6 +36,11 @@ export default function ProjectsGrid() {
 					<ProjectCard key={index} {...project} />
 				))}
 			</div>
+			<div className="center">
+				<a href="">
+					<button className="all-projects-button">All projects</button>
+				</a>
+			</div>
 		</div>
 	);
 }

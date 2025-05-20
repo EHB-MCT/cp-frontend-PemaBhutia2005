@@ -70,6 +70,10 @@
 	width: 100%;
 }
 
+.center {
+	text-align: center;
+}
+
 hr {
 	border: 2px solid #000;
 }
@@ -118,40 +122,49 @@ hr {
 	font-family: "Helvetica Neue", sans-serif;
 }
 
-.about-section {
-	display: flex;
-	justify-content: space-between;
-	padding: 40px 0;
-	border-top: 2px solid #000;
-	flex-wrap: wrap;
+.all-projects-button {
+	background-color: #e51131;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-family: "Bungee", sans-serif;
+	margin-top: 20px;
+	text-align: center;
+	align-items: center;
 }
 
-.about-left {
+.footer-section {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.footer-left {
 	max-width: 60%;
 }
 
-.about-logo {
+.footer-title {
 	font-family: "Bungee", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 }
 
-.about-description {
-	margin-top: 10px;
+.footer-description {
 	font-size: 14px;
 	color: #333;
 	font-family: "Helvetica Neue", sans-serif;
 }
 
-.about-links h4 {
-	margin-bottom: 10px;
+.footer-links ul {
+	padding-left: 0;
 	font-family: "Helvetica Neue", sans-serif;
 }
 
-.about-links ul {
-	padding-left: 0;
-}
-
-.about-links li {
+.footer-links li {
 	margin-bottom: 4px;
 }

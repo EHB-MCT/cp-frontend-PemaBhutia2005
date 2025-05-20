@@ -3,6 +3,7 @@ body {
 	background-color: #ebf5ec;
 	background-image: url(./assets/background_image.png);
 	background-size: cover;
+	background-attachment: fixed;
 }
 
 .link-no-styling {
