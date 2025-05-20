@@ -12,9 +12,22 @@ export const Navigation = () => {
 				</div>
 				<div className="width-100">
 					<ul className="bungee-regular list-style-none flex space-between">
-						<li className="active inline-block">Home</li>
-						<li className="inline-block">Projects</li>
-						<li className="inline-block">Making-of</li>
+						<li className="inline-block">
+							<a className="active" href="">
+								Home
+							</a>
+						</li>
+						<li className="inline-block">
+							{" "}
+							<a className="link-no-styling" href="">
+								Projects
+							</a>
+						</li>
+						<li className="inline-block">
+							<a className="link-no-styling" href="">
+								Making-of
+							</a>
+						</li>
 					</ul>
 
 					<div className="input-wrapper">
