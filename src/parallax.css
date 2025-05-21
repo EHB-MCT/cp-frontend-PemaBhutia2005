@@ -27,24 +27,25 @@ body.parallax-body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	/* object-fit: cover; */
 	z-index: 3;
 }
 
 .beldam {
 	position: absolute;
 	top: 5%;
-	left: 50%;
+	left: 22%;
 	transform: translateX(-50%);
 	width: 55%;
 	z-index: 1;
+	transform-origin: bottom center;
 }
 
 .house {
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 25%;
 	transform: translateX(-50%);
 	width: 50%;
 	z-index: 2;
+	transform-origin: bottom center;
 }
