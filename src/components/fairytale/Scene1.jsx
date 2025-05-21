@@ -1,13 +1,14 @@
+import beldam from "../../assets/coraline-beldam.png";
+import house from "../../assets/coraline-house.png";
+import twigs from "../../assets/bg-twigs.png";
+
 export default function Scene1() {
 	return (
-		<div className="scene1">
-			<div className="scene1__text">
-				<h1>Once upon a time</h1>
-				<p>In a land far, far away, there lived a brave knight named Sir Lancelot.</p>
-			</div>
-			<div className="scene1__image">
-				<img src="/images/knight.png" alt="Knight" />
-			</div>
+		<div className="scene-container">
+			<h2 className="scene-title">Coraline</h2>
+			<img src={twigs} className="twigs" alt="Twigs frame" />
+			<img src={beldam} className="beldam" alt="Beldam shadow" />
+			<img src={house} className="house" alt="Haunted house" />
 		</div>
 	);
 }

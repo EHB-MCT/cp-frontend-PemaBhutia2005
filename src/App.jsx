@@ -17,8 +17,9 @@ function NavWrapper() {
 	return (
 		<div
 			style={{
-				height: hovered ? "auto" : "50px",
+				height: hovered ? "auto" : "40px",
 				zIndex: 9999,
+				borderBottom: "3px solid #000",
 			}}
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
