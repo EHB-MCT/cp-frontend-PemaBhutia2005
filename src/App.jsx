@@ -1,20 +1,22 @@
 import { useState } from "react";
 import "./App.css";
 import { Navigation } from "./components/portal/Navigation";
-import ProjectsGrid from "./components/portal/ProjectGrid";
-import Footer from "./components/portal/Footer";
+
+import Home from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 
 function App() {
 	const [count, setCount] = useState(0);
 
 	return (
 		<>
-			<Navigation />
-			<main>
-				<h1 className="bungee-regular">In the spotlight</h1>
-				<ProjectsGrid />
-				<Footer />
-			</main>
+			<Router>
+				<Navigation />
+
+				<Routes>
+					<Route path="/" element={<Home />} />
+				</Routes>
+			</Router>
 		</>
 	);
 }

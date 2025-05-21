@@ -1,32 +1,33 @@
 import sprookjeLogo from "../../assets/logo.png";
 import "../../index.css";
 
+import { Link } from "react-router";
+
 export const Navigation = () => {
 	return (
 		<>
 			<nav className="flex">
 				<div>
 					<a href="#" target="_blank">
-						<img src={sprookjeLogo} className="logo" alt="Vite logo" />
+						<img src={sprookjeLogo} className="logo" alt="Er was eens logo" />
 					</a>
 				</div>
 				<div className="width-100">
 					<ul className="bungee-regular list-style-none flex space-between">
 						<li className="inline-block">
-							<a className="active" href="">
+							<Link className="active" to="/">
 								Home
-							</a>
+							</Link>
 						</li>
 						<li className="inline-block">
-							{" "}
-							<a className="link-no-styling" href="">
+							<Link className="link-no-styling" to="/projects">
 								Projects
-							</a>
+							</Link>
 						</li>
 						<li className="inline-block">
-							<a className="link-no-styling" href="">
-								Making-of
-							</a>
+							<Link className="link-no-styling" to="/making-of">
+								Making of
+							</Link>
 						</li>
 					</ul>
 
