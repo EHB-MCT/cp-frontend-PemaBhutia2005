@@ -5,8 +5,3 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 }
-
-.link-no-styling {
-	text-decoration: none;
-	color: #000;
-}

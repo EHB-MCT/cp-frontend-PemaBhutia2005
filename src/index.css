@@ -135,6 +135,11 @@ hr {
 	align-items: center;
 }
 
+.link-no-styling {
+	text-decoration: none;
+	color: #000;
+}
+
 .footer-section {
 	background-color: #fff;
 	display: flex;
