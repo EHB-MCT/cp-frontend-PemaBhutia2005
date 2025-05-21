@@ -10,7 +10,7 @@ function App() {
 
 	return (
 		<>
-			<Router>
+			<Router basename="/cp-frontend-PemaBhutia2005/">
 				<Navigation />
 
 				<Routes>

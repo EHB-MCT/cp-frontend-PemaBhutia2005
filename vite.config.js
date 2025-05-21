@@ -5,6 +5,9 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
 	plugins: [react()],
 	base: "/cp-frontend-PemaBhutia2005/",
+	build: {
+		outDir: "docs",
+	},
 	server: {
 		hmr: false,
 		watch: {
