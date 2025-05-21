@@ -1,11 +1,12 @@
 body.parallax-body {
 	background-color: #e7e2c7;
-	background-image: none;
+	background-image: url(./assets/parchment.png);
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 
+/* SCENE 1*/
 .scene-title {
 	font-family: "Annie Use Your Telescope", sans-serif;
 	font-size: 100pt;
@@ -48,4 +49,39 @@ body.parallax-body {
 	width: 50%;
 	z-index: 2;
 	transform-origin: bottom center;
+}
+
+/* SCENE2 */
+.scene2-house {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	z-index: 1;
+}
+
+.scene2-coraline {
+	position: absolute;
+	left: 5%;
+	bottom: 0;
+	width: 15%;
+	z-index: 3;
+}
+
+.scene2-father {
+	position: absolute;
+	left: 47%;
+	bottom: 0;
+	width: 10%;
+	transform: translateX(-50%);
+	z-index: 4;
+}
+
+.scene2-car {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 25%;
+	z-index: 2;
 }

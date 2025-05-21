@@ -26,7 +26,7 @@ export default function Scene1() {
 	const houseScale = useTransform(smoothScroll, [0, 1], [0.8, 1.1]);
 
 	// Beldam
-	const beldamY = useTransform(smoothScroll, [0, 1], ["5%", "-10%"]);
+	const beldamY = useTransform(smoothScroll, [0, 1], ["5%", "-5%"]);
 	const beldamScale = useTransform(smoothScroll, [0, 1], [0, 1]);
 
 	return (
