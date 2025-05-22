@@ -18,9 +18,9 @@ export default function Scene4() {
 		mass: 1,
 	});
 
-	const portraitY = useTransform(smoothScroll, [0, 1], ["100%", "-10%"]);
+	const portraitY = useTransform(smoothScroll, [0, 1], ["100%", "-50%"]);
 
-	const cakeY = useTransform(smoothScroll, [0.5, 1], ["30%", "0%"]);
+	const cakeY = useTransform(smoothScroll, [0.5, 1], ["30%", "-20%"]);
 
 	return (
 		<div className="scene-container">
@@ -31,6 +31,12 @@ export default function Scene4() {
 				<motion.img src={cake} alt="Cake" className="scene4-portrait cake" style={{ y: cakeY }} />
 				<motion.img src={portrait2} alt="Portrait" className="scene4-portrait" style={{ y: portraitY }} />
 			</div>
+
+			<p className="scene-text scene4-text2">
+				Coraline is zo blij dat ze hier voor eeuwig wilt wonen.
+				<br />
+				De "Andere Moeder" gaat akkoord, op één voorwaarde...
+			</p>
 		</div>
 	);
 }

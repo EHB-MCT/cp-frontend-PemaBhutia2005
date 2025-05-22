@@ -151,6 +151,12 @@ body.parallax-body {
 	left: 40%;
 }
 
+.scene4-text2 {
+	position: absolute;
+	bottom: 10%;
+	left: 36%;
+}
+
 .scene4-portraits {
 	padding-top: 10%;
 	display: flex;
@@ -163,4 +169,30 @@ body.parallax-body {
 .scene4-portrait {
 	width: 30%;
 	height: 50%;
+}
+
+/* SCENE 5 */
+
+.scene5-text {
+	position: absolute;
+	bottom: 85%;
+	left: 37%;
+}
+
+.scene5-coraline {
+	position: absolute;
+	left: 20%;
+	bottom: 0;
+	width: 60%;
+	z-index: 3;
+}
+
+.creepy {
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.creepy:hover {
+	opacity: 1;
+	pointer-events: auto;
 }
