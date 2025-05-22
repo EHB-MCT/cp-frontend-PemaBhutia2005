@@ -98,6 +98,8 @@ body.parallax-body {
 	left: 5%;
 }
 
+/* SCENE 3 */
+
 .door-portal {
 	margin-top: 10%;
 }
@@ -122,4 +124,21 @@ body.parallax-body {
 	position: absolute;
 	bottom: 60%;
 	left: 5%;
+}
+
+.portal-hover-text {
+	position: absolute;
+	bottom: 60%;
+	right: 5%;
+	opacity: 0;
+	animation: fadeInText 1s ease forwards;
+}
+
+@keyframes fadeInText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
