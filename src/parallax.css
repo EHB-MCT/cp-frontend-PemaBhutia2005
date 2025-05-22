@@ -196,3 +196,23 @@ body.parallax-body {
 	opacity: 1;
 	pointer-events: auto;
 }
+
+/* SCENE 6 */
+
+.scene6-text {
+	position: absolute;
+	bottom: 87%;
+	left: 25%;
+	background-color: #e7e2c7;
+	padding: 0px 5px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.scene6-doors {
+	width: 110%;
+	position: absolute;
+	left: -5%;
+	overflow-y: hidden;
+	height: 100%;
+}
