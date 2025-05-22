@@ -87,7 +87,7 @@ body.parallax-body {
 
 .scene-text {
 	font-family: "Annie Use Your Telescope", sans-serif;
-	font-size: 16pt;
+	font-size: 18pt;
 	z-index: 9999;
 	color: black;
 }
@@ -141,4 +141,20 @@ body.parallax-body {
 	to {
 		opacity: 1;
 	}
+}
+
+/* SCENE 4 */
+
+.scene4-text {
+	position: absolute;
+	bottom: 85%;
+	left: 40%;
+}
+
+.scene4-portraits {
+	padding-top: 10%;
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
 }

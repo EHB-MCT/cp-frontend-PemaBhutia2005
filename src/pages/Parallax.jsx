@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Scene1 from "../components/fairytale/Scene1";
 import Scene2 from "../components/fairytale/Scene2";
 import Scene3 from "../components/fairytale/Scene3";
+import Scene4 from "../components/fairytale/Scene4";
 
 import "../parallax.css";
 import "../App.css";
@@ -22,6 +23,7 @@ function Parallax() {
 			<Scene1 />
 			<Scene2 />
 			<Scene3 />
+			<Scene4 />
 		</div>
 	);
 }
