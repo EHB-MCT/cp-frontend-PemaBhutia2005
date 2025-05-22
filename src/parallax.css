@@ -147,7 +147,7 @@ body.parallax-body {
 
 .scene4-text {
 	position: absolute;
-	bottom: 85%;
+	bottom: 87%;
 	left: 40%;
 }
 
@@ -157,4 +157,10 @@ body.parallax-body {
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
+	height: 100%;
+}
+
+.scene4-portrait {
+	width: 30%;
+	height: 50%;
 }
