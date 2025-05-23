@@ -235,3 +235,30 @@ body.parallax-body {
 	opacity: 1;
 	pointer-events: auto;
 }
+
+.beldam-shadow {
+	position: absolute;
+	left: 27.2%;
+	bottom: -10%;
+	transform: translateX(-50%);
+	height: 90%;
+	z-index: 2;
+}
+
+/* SCENE 7 */
+
+.end-scene {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50%;
+	z-index: 1;
+}
+
+.scene7-text {
+	position: absolute;
+	bottom: 85%;
+	left: 25%;
+	text-align: center;
+}

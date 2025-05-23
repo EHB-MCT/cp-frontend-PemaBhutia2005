@@ -7,6 +7,7 @@ import Scene3 from "../components/fairytale/Scene3";
 import Scene4 from "../components/fairytale/Scene4";
 import Scene5 from "../components/fairytale/Scene5";
 import Scene6 from "../components/fairytale/Scene6";
+import Scene7 from "../components/fairytale/Scene7";
 
 import "../parallax.css";
 import "../App.css";
@@ -28,6 +29,7 @@ function Parallax() {
 			<Scene4 />
 			<Scene5 />
 			<Scene6 />
+			<Scene7 />
 		</div>
 	);
 }
