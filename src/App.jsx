@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { Navigation } from "./components/portal/Navigation";
 import Home from "./pages/Home";
 import Parallax from "./pages/Parallax";
+import Projects from "./pages/Projects";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -42,6 +43,7 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/parallax" element={<Parallax />} />
+				<Route path="/projects" element={<Projects />} />
 			</Routes>
 		</Router>
 	);

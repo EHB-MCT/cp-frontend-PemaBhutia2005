@@ -23,7 +23,7 @@ function Home() {
 	return (
 		<main>
 			<h1 className="bungee-regular">In the spotlight</h1>
-			<ProjectsGrid projects={fairytales} />
+			<ProjectsGrid projects={fairytales} limit={8} />
 			<Footer />
 		</main>
 	);
