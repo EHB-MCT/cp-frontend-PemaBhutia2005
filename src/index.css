@@ -142,11 +142,15 @@ hr {
 
 .footer-section {
 	background-color: #fff;
+	width: 100vw;
+	padding: 20px 152px;
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 0;
 	flex-wrap: wrap;
-	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .footer-left {
