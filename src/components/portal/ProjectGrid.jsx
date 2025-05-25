@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import { Link } from "react-router";
 
 export default function ProjectsGrid({ projects = [], limit }) {
 	const displayedProjects = limit ? projects.slice(0, limit) : projects;
@@ -6,8 +7,10 @@ export default function ProjectsGrid({ projects = [], limit }) {
 	return (
 		<div className="projects-wrapper">
 			<div className="projects-grid">
-				{displayedProjects.map((project, index) => (
-					<ProjectCard key={index} title={project.fairytale} author={project.nameStudent} imgSrc={project.imgThumbnail || "fallback.jpg"} />
+				{displayedProjects.map((project) => (
+					<Link key={project.fairytale} to={`/projects/${project.fairytale.toLowerCase().replace(/\s+/g, "-")}`} className="link-no-styling">
+						<ProjectCard title={project.fairytale} author={project.nameStudent} imgSrc={project.imgThumbnail || "fallback.jpg"} />
+					</Link>
 				))}
 			</div>
 			<div className="center">

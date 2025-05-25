@@ -28,7 +28,7 @@ export const Navigation = () => {
 								</Link>
 							</li>
 							<li className="inline-block">
-								<Link className="link-no-styling" to="/making-of">
+								<Link className="link-no-styling" to="/projects/coraline">
 									Making of
 								</Link>
 							</li>

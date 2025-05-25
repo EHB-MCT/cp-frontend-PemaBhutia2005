@@ -4,6 +4,7 @@ import { Navigation } from "./components/portal/Navigation";
 import Home from "./pages/Home";
 import Parallax from "./pages/Parallax";
 import Projects from "./pages/Projects";
+import Makingof from "./pages/MakingOf";
 
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -44,6 +45,7 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/parallax" element={<Parallax />} />
 				<Route path="/projects" element={<Projects />} />
+				<Route path="/projects/:url" element={<Makingof />} />
 			</Routes>
 		</Router>
 	);
