@@ -18,9 +18,9 @@ export default function Scene4() {
 		mass: 1,
 	});
 
-	const portraitY = useTransform(smoothScroll, [0, 1], ["100%", "-50%"]);
+	const portraitY = useTransform(smoothScroll, [0, 1], ["50%", "-70%"]);
 
-	const cakeY = useTransform(smoothScroll, [0.5, 1], ["30%", "-20%"]);
+	const cakeY = useTransform(smoothScroll, [0.5, 1], ["10%", "-50%"]);
 
 	return (
 		<div className="scene-container">

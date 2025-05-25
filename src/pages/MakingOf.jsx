@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Footer from "../components/portal/Footer";
 
+import "../App.css";
+
 function Makingof() {
 	const { url } = useParams();
 	const [project, setProject] = useState(null);
@@ -16,6 +18,8 @@ function Makingof() {
 	}, [url]);
 
 	if (!project) return <p style={{ padding: "20px" }}>Loading...</p>;
+
+	console.log("project:", project);
 
 	return (
 		<main>
@@ -33,9 +37,11 @@ function Makingof() {
 				<div style={{ flex: 1 }}>
 					<h3 className="bungee-regular">DESCRIPTION</h3>
 					<p className="footer-description">{project.description}</p>
-					{project.website && (
-						<a href={project.website} target="_blank" rel="noreferrer">
-							<button className="all-projects-button">VISIT WEBSITE</button>
+					{project.fairytaleLink && (
+						<a href={project.fairytaleLink} target="_blank" rel="noreferrer">
+							<button className="all-projects-button" style={{ marginTop: "20px" }}>
+								VISIT WEBSITE
+							</button>
 						</a>
 					)}
 				</div>
