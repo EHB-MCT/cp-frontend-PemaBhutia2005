@@ -204,6 +204,7 @@ body.parallax-body {
 	bottom: 87%;
 	left: 25%;
 	background-color: #e7e2c7;
+	border: 2px solid #000;
 	padding: 0px 5px;
 	text-align: center;
 	border-radius: 5px;

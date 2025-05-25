@@ -53,7 +53,7 @@ function Parallax() {
 					zIndex: 9999,
 					background: "#e7e2c7",
 					color: "#000",
-					border: "none",
+					border: "2px solid #000",
 					borderRadius: "12px",
 					padding: "10px 15px",
 					cursor: "pointer",

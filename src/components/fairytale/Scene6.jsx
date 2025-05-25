@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import doors from "../../assets/doors.png";
 import parents from "../../assets/parents.png";
 import beldamShadow from "../../assets/beldam-shadow.png";
@@ -6,6 +6,7 @@ import beldamShadow from "../../assets/beldam-shadow.png";
 export default function Scene6() {
 	const [position, setPosition] = useState({ x: 0, y: 0 });
 	const [beldamVisible, setBeldamVisible] = useState(false);
+	const containerRef = useRef(null);
 
 	const handleMouseMove = (e) => {
 		const { clientX, clientY } = e;
@@ -19,13 +20,25 @@ export default function Scene6() {
 	};
 
 	useEffect(() => {
-		// opacity animatie na mount
-		const timeout = setTimeout(() => setBeldamVisible(true), 100);
-		return () => clearTimeout(timeout);
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					setBeldamVisible(true);
+					observer.disconnect(); // triggert maar 1 keer
+				}
+			},
+			{ threshold: 0.5 } // start wnr 50% vd scene visible is
+		);
+
+		if (containerRef.current) {
+			observer.observe(containerRef.current);
+		}
+
+		return () => observer.disconnect();
 	}, []);
 
 	return (
-		<div className="scene-container" onMouseMove={handleMouseMove}>
+		<div className="scene-container" onMouseMove={handleMouseMove} ref={containerRef}>
 			<p className="scene-text scene6-text">
 				Coraline probeert te ontsnappen maar de Andere Moeder heeft haar ouders gevangen. <br />
 				Waar zijn ze?
@@ -50,7 +63,7 @@ export default function Scene6() {
 				style={{
 					transform: `translate(${position.x}px, ${position.y}px)`,
 					opacity: beldamVisible ? "90%" : "5%",
-					transition: "opacity 8s ease-in-out, transform 0.1s ease-out",
+					transition: "opacity 7s ease-in-out, transform 0.1s ease-out",
 				}}
 			/>
 		</div>
