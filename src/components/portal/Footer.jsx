@@ -1,4 +1,6 @@
 import sprookjeLogo from "../../assets/logo.png";
+import "../../index.css";
+import { Link } from "react-router";
 
 export default function Footer() {
 	return (
@@ -13,21 +15,21 @@ export default function Footer() {
 			</div>
 			<div className="footer-links">
 				<h4 className="footer-title">LINKS</h4>
-				<ul className="list-style-none">
-					<li>
-						<a className="link-no-styling" href="#">
-							HOME
-						</a>
+				<ul className="list-style-none footer-links">
+					<li className="footer-links">
+						<Link className="link-no-styling footer-links" to="/">
+							Home
+						</Link>
 					</li>
-					<li>
-						<a className="link-no-styling" href="#">
-							PROJECTS
-						</a>
+					<li className="footer-links">
+						<Link className="link-no-styling footer-links" to="/projects">
+							Projects
+						</Link>
 					</li>
-					<li>
-						<a className="link-no-styling" href="#">
-							MAKING-OF
-						</a>
+					<li className="footer-links">
+						<Link className="link-no-styling footer-links" to="/projects/coraline">
+							Making of
+						</Link>
 					</li>
 				</ul>
 			</div>
