@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router";
 import { Navigation } from "./components/portal/Navigation";
 import Home from "./pages/Home";
 import Parallax from "./pages/Parallax";

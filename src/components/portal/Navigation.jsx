@@ -32,11 +32,6 @@ export const Navigation = () => {
 									Making of
 								</Link>
 							</li>
-							<li className="inline-block">
-								<Link className="link-no-styling" to="/parallax">
-									My fairytale
-								</Link>
-							</li>
 						</ul>
 
 						<div className="input-wrapper">
