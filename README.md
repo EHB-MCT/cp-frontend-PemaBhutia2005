@@ -13,3 +13,5 @@
 [onMouseEnter](https://www.w3schools.com/JSREF/event_onmouseenter.asp) used in Scene3 to play animation as soon as user hovers over the hidden item
 
 [How to toggle play/pause in ReactJS with audio ?](https://www.geeksforgeeks.org/how-to-toggle-play-pause-in-reactjs-with-audio/) used in Parallax.jsx to play the audio when a user clicks on the button and stop playing it when they press it again
+
+[ChatGPT](https://chatgpt.com/share/6834d69a-8890-800e-a9d7-09e1d23e14c4) used to try to increase the performance of my portal page
