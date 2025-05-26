@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function ProjectsGrid({ projects = [], limit }) {
 	const displayedProjects = limit ? projects.slice(0, limit) : projects;

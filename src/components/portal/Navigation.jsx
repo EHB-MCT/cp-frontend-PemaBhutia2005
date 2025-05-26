@@ -1,10 +1,19 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import sprookjeLogo from "../../assets/logo.png";
 import "../../index.css";
 
 import { Link } from "react-router";
 
 export const Navigation = () => {
-	const isParallax = document.body.classList.contains("parallax-body");
+	const isParallax = window.location.pathname === "/parallax";
+	const [searchTerm, setSearchTerm] = useState("");
+	const navigate = useNavigate();
+
+	const handleSearch = () => {
+		// redirect naar /projects with query param
+		navigate(`/projects?search=${searchTerm.trim()}`);
+	};
 
 	return (
 		<>
@@ -35,8 +44,10 @@ export const Navigation = () => {
 						</ul>
 
 						<div className="input-wrapper">
-							<input type="text" placeholder="Search for a topic" className="search-bar" />
-							<button className="search-button">Search</button>
+							<input type="text" placeholder="Search for a topic" className="search-bar" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+							<button className="search-button" onClick={handleSearch}>
+								Search
+							</button>
 						</div>
 					</div>
 				</nav>
