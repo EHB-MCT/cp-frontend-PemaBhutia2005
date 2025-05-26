@@ -38,7 +38,7 @@ function Makingof() {
 					<h3 className="bungee-regular">DESCRIPTION</h3>
 					<p className="footer-description">{project.description}</p>
 					{project.fairytaleLink && (
-						<a href={project.fairytaleLink} target="_blank" rel="noreferrer">
+						<a href={project.fairytaleLink} target="_blank">
 							<button className="all-projects-button" style={{ marginTop: "20px" }}>
 								VISIT WEBSITE
 							</button>

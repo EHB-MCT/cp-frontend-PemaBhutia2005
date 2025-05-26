@@ -8,7 +8,7 @@ import Scene7 from "../components/fairytale/Scene7";
 
 import "../parallax.css";
 import "../App.css";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function Parallax() {
 	const audioRef = useRef(null);
@@ -16,9 +16,11 @@ function Parallax() {
 	const [started, setStarted] = useState(false);
 
 	useEffect(() => {
+		//als de component is gemount, voeg class toe aan de body
 		document.body.classList.add("parallax-body");
 
 		return () => {
+			//als de component wordt verwijderd, verwijder class van de body
 			document.body.classList.remove("parallax-body");
 			const audio = audioRef.current;
 			if (audio) audio.pause();
@@ -28,11 +30,13 @@ function Parallax() {
 	const handleToggle = () => {
 		const audio = audioRef.current;
 		if (!started) {
+			//eerste keer dat de muziek wordt afgespeeld
 			audio.muted = false;
 			audio.play().catch((e) => console.warn("Autoplay blocked:", e));
 			setStarted(true);
 			setMuted(false);
 		} else {
+			//muziek wordt aangezet of uitgezet
 			audio.muted = !audio.muted;
 			setMuted(audio.muted);
 		}

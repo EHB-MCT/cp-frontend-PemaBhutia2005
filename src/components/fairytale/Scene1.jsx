@@ -13,9 +13,9 @@ export default function Scene1() {
 	});
 
 	const smoothScroll = useSpring(scrollYProgress, {
-		stiffness: 100,
-		damping: 30,
-		mass: 1,
+		stiffness: 100, //hoger = sneller
+		damping: 30, // lager = minder schokken
+		mass: 1, // massa van de animatie, hoe zwaarder, hoe trager
 	});
 
 	// Twigs

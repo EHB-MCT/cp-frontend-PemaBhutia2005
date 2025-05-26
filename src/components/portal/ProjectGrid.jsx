@@ -8,6 +8,9 @@ export default function ProjectsGrid({ projects = [], limit }) {
 		<div className="projects-wrapper">
 			<div className="projects-grid">
 				{displayedProjects.map((project) => (
+					//convert naar lowercase
+					//vervangt spaties met streepjes
+					//voeg toe aan de link
 					<Link key={project.fairytale} to={`/projects/${project.fairytale.toLowerCase().replace(/\s+/g, "-")}`} className="link-no-styling">
 						<ProjectCard title={project.fairytale} author={project.nameStudent} imgSrc={project.imgThumbnail || "fallback.jpg"} />
 					</Link>
