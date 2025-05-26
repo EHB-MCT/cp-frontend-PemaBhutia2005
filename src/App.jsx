@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Navigation } from "./components/portal/Navigation";
 import Home from "./pages/Home";
 import Parallax from "./pages/Parallax";
 import Projects from "./pages/Projects";
 import Makingof from "./pages/MakingOf";
-
-import { AnimatePresence, motion } from "framer-motion";
 
 function NavWrapper() {
 	const location = useLocation();
