@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Navigation } from "./components/portal/Navigation";
 import Home from "./pages/Home";
 import Parallax from "./pages/Parallax";
@@ -25,13 +25,7 @@ function NavWrapper() {
 			onMouseEnter={() => setHovered(true)}
 			onMouseLeave={() => setHovered(false)}
 		>
-			<AnimatePresence>
-				{hovered && (
-					<motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.3 }}>
-						<Navigation />
-					</motion.div>
-				)}
-			</AnimatePresence>
+			{hovered && <Navigation />}
 		</div>
 	);
 }

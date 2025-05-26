@@ -1,6 +1,6 @@
 import sprookjeLogo from "../../assets/logo.png";
 import "../../index.css";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
 	return (

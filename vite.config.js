@@ -18,4 +18,9 @@ export default defineConfig({
 	esbuild: {
 		sourcemap: false,
 	},
+	rollupOptions: {
+		output: {
+			manualChunks: undefined, // disables code splitting
+		},
+	},
 });
